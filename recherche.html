@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videotheque mediavision</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header> <a href=""><img src="MEDIAVISION.png" alt="logo videotheque mediavision" /></a>
+        <nav> 
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="videotheque.html">Vidéothèque</a></li>
+                <li><a href="recherche.html">Espace recherche</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="formulaireRecherche">
+            <label for="titre">Titre:</label>
+            <input type="text" id="titre" name="titre" ><br>
+            <label for="annee">Année:</label>
+            <input type="number" id="annee" name="annee"><br>
+            <label for="type">Type :</label>
+            <select id="typeSelection">
+                <option value="movie">Film</option>
+                <option value="episode">Episode</option>
+                <option value="series">Séries</option>
+                <option value="season">Saison</option>
+            </select>
+            <button type="button" id="boutonRecherche">Rechercher</button>
+        </div>
+        <div class="container" id="resultContainer">
+            <div id="resultats"></div>
+        </div>
+    </main>
+
+    <script src="app2.js"></script>
+</body>
+
+</html>

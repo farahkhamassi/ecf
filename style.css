@@ -1,0 +1,357 @@
+header {
+    position: static;
+    background-color: #a1ebee;
+    display: inline-flex;
+    width: 1200px;
+    margin: 0;
+}
+header a{
+    float: left;
+    clear: none;
+}
+nav {
+    margin-left:auto;
+    float: right;
+    clear: none;
+    align-self: center;
+    padding-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    margin: 0 5px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav > ul {
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    margin-left: -50px;
+}
+
+ul > li {
+    border-right: 1px solid #34a7bb;
+}
+
+ul >li:last-child {
+    border: none;
+}
+
+li > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    background-color: #34a7bb;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+}
+main {
+    text-align: justify;
+    background-color: white;
+    width: 1200px;
+    display: inline-block;
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    clear: none;
+}
+
+#animation-container {
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    display: inline-block;
+    max-width: 100%;
+}
+
+#title {
+    display: none; 
+    font-size: 2em; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main #button {
+    display: flexbox;
+    flex-direction: row;
+    text-align: center;
+    margin: 30px;
+
+}
+
+#button a {
+    text-decoration: none;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #34a7bb;
+    color: white;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+#filmTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+}
+
+#filmTable th, #filmTable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc; 
+}
+
+#filmTable th {
+    background-color: #34a7bb; 
+    color: white; 
+}
+
+#filmTable tr:nth-child(even) {
+    background-color: #f5f5f5; 
+}
+
+#filmTable tr:hover {
+    background-color: #e0e0e0; 
+}
+
+#filmTable a {
+    text-decoration: none;
+    color: #34a7bb; 
+}
+
+main #addButton {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #34a7bb;
+    color: white;
+    margin-top: 20px;
+    display: block; 
+    margin: 0 auto; 
+    margin-bottom: 20px;
+}
+
+#formulaireAjout {
+    display: none;
+    padding: 20px; 
+    text-align: center;
+}
+
+#formulaireAjout label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#formulaireAjout input[type="text"],
+#formulaireAjout input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#saveButton {
+    padding: 10px 20px;
+    background-color: #34a7bb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+}
+
+#saveButton:hover {
+    background-color: #268b9b; 
+}
+
+#formulaireRecherche {
+    padding: 20px;
+    border: 2px solid #34a7bb; 
+    border-radius: 5px;
+}
+
+#formulaireRecherche label {
+    display: block;
+    margin-top: 10px;
+}
+
+#formulaireRecherche input[type="text"],
+#formulaireRecherche input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #34a7bb;
+    border-radius: 5px;
+}
+
+#typeSelection {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #34a7bb;
+    border-radius: 5px;
+}
+
+#boutonRecherche {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #34a7bb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#boutonRecherche:hover {
+    background-color: #258eaa;
+}
+
+#resultContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.resultat {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.resultat img {
+    max-width: 100px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.resultat p {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        display: block;
+    }
+    header a {
+        float: none;
+        clear: both;
+    }
+    nav {
+        margin-left: 0;
+        float: none;
+        text-align: center;
+        padding-right: 0;
+    }
+    ul > li {
+        border-right: none;
+        border-bottom: 1px solid #34a7bb;
+    }
+    h1 {
+        text-align: center;
+        color: #34a7bb;
+        font-family: fantasy;
+    }
+    
+    main {
+        width: 80%;
+    }
+    main p {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    main #button {
+        display: flexbox;
+        flex-direction: row;
+        text-align: left;
+        margin: 30px;
+    
+    }
+    
+    .table-container {
+        margin: 20px;
+        display: flex;
+        justify-content: left; 
+    }
+
+    #formulaireRecherche {
+        padding: 10px;
+    }
+
+    
+    #resultContainer {
+        display: block;
+    }
+
+}
+    
+    
+@media screen and (max-width: 576px) {
+    nav a {
+        font-size: 20px;
+    }
+    ul > li {
+        border-bottom: none;
+    }
+    li > a {
+        padding: 10px;
+    }
+    main {
+        text-align: center;
+        width: 80%;
+        font-size: 16px;
+        padding: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+    main p {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    main #button {
+        display: block;
+        text-align: center;
+        margin: 30px;
+    }
+
+    #button a {
+        display: block;
+        margin: 10px 0;
+    }
+    .table-container {
+        margin: 20px;
+        display: flex;
+        justify-content: left; 
+    }
+
+}

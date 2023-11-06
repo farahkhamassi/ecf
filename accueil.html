@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videotheque mediavision</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <nav> 
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="videotheque.html">Vidéothèque</a></li>
+                <li><a href="recherche.html">Espace recherche</a></li>
+              </ul>
+      
+        </nav>
+    </header>
+    <main>
+        <audio id="myAudio" autoplay>
+            <source src="NOUVEAU JINGLE NETFLIX.mp3" type="audio/mpeg">
+        </audio>
+        <div id="animation-container">
+            <img src="MEDIAVISION.png" alt="logo mediavision" id="logo">
+            <h1 id="title">MediaVision</h1>
+        </div>        <p>Bienvenue dans votre médiathèque.</p>
+        <p>Dans les pages ci dessous vous avez la possibilité de consulter les films présents dans notre médiathèque, d'en ajouter, et de faire des recherches.</p>
+        <p>Bonne navigation</p>
+        <div id="button"> 
+            <a href="videotheque.html" >Accéder à la vidéothèque</a>
+            <a href="recherche.html" >Accéder à l'espace recherche</a>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
